@@ -1,16 +1,16 @@
 {
-  "name": "jchz",
-  "displayName": "jchz",
-  "description": "jchz",
-  "version": "3.9.2",
-  "author": "nercoeus <nercoeus@outlook.com>",
+  "name": "miayn",
+  "displayName": "miayn",
+  "description": "miayn",
+  "version": "0.0.2",
+  "author": "nercoeus <nercoeus@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/leek-fund.git"
+    "url": "https://github.com/nercoeus/miayn.git"
   },
   "license": "BSD-3-Clause",
   "keywords": [
-    "jchz"
+    "miayn"
   ],
   "publisher": "nercoeus",
   "icon": "resources/logo.png",
@@ -34,217 +34,7 @@
       "leekFundMenu": [
       ]
     },
-    "commands": [
-      {
-        "command": "leek-fund.viewFundRank",
-        "title": "基金排行榜",
-        "icon": {
-          "light": "resources/light/rank.svg",
-          "dark": "resources/dark/rank.svg"
-        }
-      },
-      {
-        "command": "leek-fund.viewFundTrend",
-        "title": "基金走势一览",
-        "icon": {
-          "light": "resources/light/trend.svg",
-          "dark": "resources/dark/trend.svg"
-        }
-      },
-      {
-        "command": "leek-fund.sortFund",
-        "title": "升序/降序/不排序",
-        "icon": {
-          "light": "resources/light/sort.svg",
-          "dark": "resources/dark/sort.svg"
-        }
-      },
-      {
-        "command": "leek-fund.sortAmountFund",
-        "title": "持仓金额升序/降序",
-        "icon": {
-          "light": "resources/light/amount-sort.svg",
-          "dark": "resources/dark/amount-sort.svg"
-        }
-      },
-      {
-        "command": "leek-fund.addFund",
-        "title": "添加基金",
-        "icon": "$(add)"
-      },
-      {
-        "command": "leek-fund.addFundGroup",
-        "title": "添加分组",
-        "icon": "$(diff-added)"
-      },
-      {
-        "command": "leek-fund.setFundAmount",
-        "title": "设置基金持仓金额",
-        "icon": {
-          "light": "resources/light/amount.svg",
-          "dark": "resources/dark/amount.svg"
-        }
-      },
-      {
-        "command": "leek-fund.setFundTop",
-        "title": "基金置顶",
-        "icon": {
-          "light": "resources/light/top.svg",
-          "dark": "resources/dark/top.svg"
-        }
-      },
-      {
-        "command": "leek-fund.deleteFund",
-        "title": "删除基金"
-      },
-      {
-        "command": "leek-fund.viewFundHistory",
-        "title": "历史净值"
-      },
-      {
-        "command": "leek-fund.viewFundPosition",
-        "title": "持仓信息"
-      },
-      {
-        "command": "leek-fund.removeFundGroup",
-        "title": "删除分组"
-      },
-      {
-        "command": "leek-fund.renameFundGroup",
-        "title": "修改分组名称"
-      },
-      {
-        "command": "leek-fund.refreshFund",
-        "title": "刷新数据",
-        "icon": "$(refresh)"
-      },
-      {
-        "command": "leek-fund.sortStock",
-        "title": "升序/降序/不排序",
-        "icon": {
-          "light": "resources/light/sort.svg",
-          "dark": "resources/dark/sort.svg"
-        }
-      },
-      {
-        "command": "leek-fund.addStock",
-        "title": "添加股票",
-        "icon": "$(add)"
-      },
-      {
-        "command": "leek-fund.setStockPrice",
-        "title": "设置股票成本价",
-        "icon": {
-          "light": "resources/light/amount.svg",
-          "dark": "resources/dark/amount.svg"
-        }
-      },
-      {
-        "command": "leek-fund.leekCenterView",
-        "title": "韭菜中心",
-        "icon": "$(home)"
-      },
-      {
-        "command": "leek-fund.refreshStock",
-        "title": "刷新数据",
-        "icon": "$(refresh)"
-      },
-      {
-        "command": "leek-fund.setStockTop",
-        "title": "股票置顶",
-        "icon": {
-          "light": "resources/light/top.svg",
-          "dark": "resources/dark/top.svg"
-        }
-      },
-      {
-        "command": "leek-fund.setStockUp",
-        "title": "股票上移",
-        "icon": "$(arrow-up)"
-      },
-      {
-        "command": "leek-fund.setStockDown",
-        "title": "股票下移",
-        "icon": "$(arrow-down)"
-      },
-      {
-        "command": "leek-fund.deleteStock",
-        "title": "删除股票"
-      },
-      {
-        "command": "leek-fund.addStockToBar",
-        "title": "添加至状态栏"
-      },
-      {
-        "command": "leek-fund.stockTrendPic",
-        "title": "股票走势（图片版）"
-      },
-      {
-        "command": "leek-fund.viewFundFlow",
-        "title": "资金流向",
-        "icon": {
-          "light": "resources/light/flow.svg",
-          "dark": "resources/dark/flow.svg"
-        }
-      },
-      {
-        "command": "leek-fund.refreshFollow",
-        "title": "刷新关注列表",
-        "icon": "$(refresh)"
-      },
-      {
-        "command": "leek-fund.toggleFlashNews",
-        "title": "启用/关闭 OUTPUT Flash News",
-        "icon": {
-          "light": "resources/light/news.svg",
-          "dark": "resources/dark/news.svg"
-        }
-      },
-      {
-        "command": "leek-fund.addNews",
-        "title": "添加关注雪球用户",
-        "icon": "$(add)"
-      },
-      {
-        "command": "leek-fund.viewUserTimeline",
-        "title": "查看动态（无头像）"
-      },
-      {
-        "command": "leek-fund.deleteUser",
-        "title": "取消关注"
-      },
-      {
-        "command": "leek-fund.addBinancePair",
-        "title": "添加交易对",
-        "icon": "$(add)"
-      },
-      {
-        "command": "leek-fund.deletePair",
-        "title": "删除交易对"
-      },
-      {
-        "command": "leek-fund.refreshBinance",
-        "title": "刷新数据",
-        "icon": "$(refresh)"
-      },
-      {
-        "command": "leek-fund.setPairTop",
-        "title": "交易对置顶",
-        "icon": {
-          "light": "resources/light/top.svg",
-          "dark": "resources/dark/top.svg"
-        }
-      },
-      {
-        "command": "leek-fund.refreshForex",
-        "title": "刷新数据",
-        "icon": "$(refresh)"
-      },
-      {
-        "command": "leek-fund.toggleStatusBarVisibility",
-        "title": "LeekFund: Toggle Status Bar Visibility"
-      }
-    ],
+    "commands": [],
     "menus": {
       "view/title": [
         {
