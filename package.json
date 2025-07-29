@@ -32,220 +32,37 @@
     },
     "views": {
       "leekFundMenu": [
+        {
+          "id": "leekFundView.fund",
+          "name": "Fund"
+        },
+        {
+          "id": "leekFundView.stock",
+          "name": "Stock"
+        },
+        {
+          "id": "leekFundView.news",
+          "name": "XueQiu News"
+        },
+        {
+          "id": "leekFundView.binance",
+          "name": "Binance",
+          "visibility": "hidden"
+        },
+        {
+          "id": "leekFundView.forex",
+          "name": "Forex",
+          "visibility": "hidden"
+        },
+        {
+          "id": "leekFundView.settings",
+          "visibility": "visible",
+          "name": "Settings"
+        }
       ]
     },
     "commands": [],
-    "menus": {
-      "view/title": [
-        {
-          "command": "leek-fund.viewFundTrend",
-          "when": "view == leekFundView.fund",
-          "group": "navigation"
-        },
-        {
-          "command": "leek-fund.viewFundRank",
-          "when": "view == leekFundView.fund",
-          "group": "navigation"
-        },
-        {
-          "command": "leek-fund.refreshFund",
-          "when": "view == leekFundView.fund",
-          "group": "navigation"
-        },
-        {
-          "command": "leek-fund.sortFund",
-          "when": "view == leekFundView.fund",
-          "group": "navigation"
-        },
-        {
-          "command": "leek-fund.sortAmountFund",
-          "when": "view == leekFundView.fund",
-          "group": "navigation"
-        },
-        {
-          "command": "leek-fund.addFundGroup",
-          "when": "view == leekFundView.fund",
-          "group": "navigation"
-        },
-        {
-          "command": "leek-fund.setFundAmount",
-          "when": "view == leekFundView.fund",
-          "group": "navigation"
-        },
-        {
-          "command": "leek-fund.refreshStock",
-          "when": "view == leekFundView.stock",
-          "group": "navigation"
-        },
-        {
-          "command": "leek-fund.sortStock",
-          "when": "view == leekFundView.stock",
-          "group": "navigation"
-        },
-        {
-          "command": "leek-fund.addStock",
-          "when": "view == leekFundView.stock",
-          "group": "navigation"
-        },
-        {
-          "command": "leek-fund.viewFundFlow",
-          "when": "view == leekFundView.stock",
-          "group": "navigation"
-        },
-        {
-          "command": "leek-fund.leekCenterView",
-          "when": "view == leekFundView.stock",
-          "group": "navigation"
-        },
-        {
-          "command": "leek-fund.setStockPrice",
-          "when": "view == leekFundView.stock",
-          "group": "navigation"
-        },
-        {
-          "command": "leek-fund.refreshFollow",
-          "when": "view == leekFundView.news",
-          "group": "navigation"
-        },
-        {
-          "command": "leek-fund.toggleFlashNews",
-          "when": "view == leekFundView.news",
-          "group": "navigation"
-        },
-        {
-          "command": "leek-fund.addNews",
-          "when": "view == leekFundView.news",
-          "group": "navigation"
-        },
-        {
-          "command": "leek-fund.refreshBinance",
-          "when": "view == leekFundView.binance",
-          "group": "navigation"
-        },
-        {
-          "command": "leek-fund.addBinancePair",
-          "when": "view == leekFundView.binance",
-          "group": "navigation"
-        },
-        {
-          "command": "leek-fund.refreshForex",
-          "when": "view == leekFundView.forex",
-          "group": "navigation"
-        }
-      ],
-      "view/item/context": [
-        {
-          "command": "leek-fund.viewFundHistory",
-          "when": "view == leekFundView.fund && viewItem != category",
-          "group": "group2"
-        },
-        {
-          "command": "leek-fund.viewFundPosition",
-          "when": "view == leekFundView.fund && viewItem != category",
-          "group": "group2"
-        },
-        {
-          "command": "leek-fund.setFundTop",
-          "when": "view == leekFundView.fund && viewItem != category  && viewItem!=nodata",
-          "group": "group1"
-        },
-        {
-          "command": "leek-fund.setFundTop",
-          "when": "view == leekFundView.fund && viewItem != category  && viewItem!=nodata",
-          "group": "inline"
-        },
-        {
-          "command": "leek-fund.addFund",
-          "when": "view == leekFundView.fund && viewItem == category",
-          "group": "inline"
-        },
-        {
-          "command": "leek-fund.deleteFund",
-          "when": "view == leekFundView.fund && viewItem != category",
-          "group": "group4"
-        },
-        {
-          "command": "leek-fund.removeFundGroup",
-          "when": "view == leekFundView.fund && viewItem == category",
-          "group": "group7"
-        },
-        {
-          "command": "leek-fund.renameFundGroup",
-          "when": "view == leekFundView.fund && viewItem == category",
-          "group": "group7"
-        },
-        {
-          "command": "leek-fund.setStockTop",
-          "when": "view == leekFundView.stock && viewItem != category  && viewItem!=nodata",
-          "group": "group1"
-        },
-        {
-          "command": "leek-fund.setStockUp",
-          "when": "view == leekFundView.stock && viewItem != category  && viewItem!=nodata",
-          "group": "group1"
-        },
-        {
-          "command": "leek-fund.setStockDown",
-          "when": "view == leekFundView.stock && viewItem != category  && viewItem!=nodata",
-          "group": "group1"
-        },
-        {
-          "command": "leek-fund.stockTrendPic",
-          "when": "view == leekFundView.stock  && viewItem != category && viewItem!=nodata",
-          "group": "group2"
-        },
-        {
-          "command": "leek-fund.setStockTop",
-          "when": "view == leekFundView.stock && viewItem != category && viewItem!=nodata",
-          "group": "inline"
-        },
-        {
-          "command": "leek-fund.setStockUp",
-          "when": "view == leekFundView.stock && viewItem != category && viewItem!=nodata",
-          "group": "inline"
-        },
-        {
-          "command": "leek-fund.setStockDown",
-          "when": "view == leekFundView.stock && viewItem != category && viewItem!=nodata",
-          "group": "inline"
-        },
-        {
-          "command": "leek-fund.deleteStock",
-          "when": "view == leekFundView.stock  && viewItem != category",
-          "group": "group5"
-        },
-        {
-          "command": "leek-fund.addStockToBar",
-          "when": "view == leekFundView.stock  && viewItem != category",
-          "group": "group6"
-        },
-        {
-          "command": "leek-fund.deletePair",
-          "when": "view == leekFundView.binance  && viewItem != category",
-          "group": "group0"
-        },
-        {
-          "command": "leek-fund.setPairTop",
-          "when": "view == leekFundView.binance",
-          "group": "inline"
-        },
-        {
-          "command": "leek-fund.setPairTop",
-          "when": "view == leekFundView.binance",
-          "group": "group1"
-        },
-        {
-          "command": "leek-fund.viewUserTimeline",
-          "when": "view == leekFundView.news",
-          "group": "group0"
-        },
-        {
-          "command": "leek-fund.deleteUser",
-          "when": "view == leekFundView.news",
-          "group": "group1"
-        }
-      ]
-    },
+    "menus": {},
     "configuration": {
       "properties": {
         "leek-fund.stocks": {
@@ -447,32 +264,7 @@
         }
       }
     },
-    "viewsWelcome": [
-      {
-        "view": "leekFundView.fund",
-        "contents": "无数据，请检查网络或添加基金"
-      },
-      {
-        "view": "leekFundView.stock",
-        "contents": "无数据，请检查网络或添加股票"
-      },
-      {
-        "view": "leekFundView.binance",
-        "contents": "无数据，请检查网络或添加交易对"
-      },
-      {
-        "view": "leekFundView.forex",
-        "contents": "无数据，请检查网络"
-      },
-      {
-        "view": "leekFundView.news",
-        "contents": "无数据，请检查网络或添加关注用户"
-      },
-      {
-        "view": "leekFundView.settings",
-        "contents": "\n [🏠️ 韭菜中心](command:leek-fund.leekCenterView) \n [🎨个性定制](command:leek-fund.customSetting)\n[💰赞助插件](command:leek-fund.donate)\n[📄使用文档](https://github.com/LeekHub/leek-fund/issues/371)\n[📚投资交流](https://github.com/LeekHub/leek-fund/issues/19)\n源码[Github](https://github.com/LeekHub/leek-fund)"
-      }
-    ]
+    "viewsWelcome": []
   },
   "scripts": {
     "vscode:prepublish": "yarn run compile",
